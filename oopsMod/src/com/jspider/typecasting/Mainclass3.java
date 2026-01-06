@@ -13,14 +13,15 @@ public class Mainclass3 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		C c = new C();
-		c.test();
+		c.test();	//C can access all.
 		c.disp();
 		c.play();
 		B b = c;//UPCASTING C-->B
-		b.disp();
+		b.disp();	//B can access itself and its super class
 		b.test();
 		A a = b;//UPCASTING B-->A
 		a.test();
+		//a.disp(); A has only one method
 		A a2 = c;//UPCASTING C-->A
 		a2.test();
 	}
